@@ -1,4 +1,4 @@
-import 'package:day1/screen3.dart';
+import 'package:day11/screen2.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Screen3(),
+      home: Screen2(),
     );
   }
 }

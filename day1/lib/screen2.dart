@@ -67,7 +67,7 @@ class Screen2 extends StatelessWidget {
                                   color: Color.fromARGB(255, 254, 251, 251)),
                             ),
                             Image.asset(
-                              'assets/Vector.png',
+                              'assets/vector.png',
                               height: 90,
                               width: 180,
                             )
@@ -100,62 +100,64 @@ class Screen2 extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Row(
-                          children: [
-                            SizedBox(
-                              width: 80, // تحديد عرض للـ Stack
-                              height: 30, // تحديد ارتفاع للـ Stack
-                              child: Stack(
-                                clipBehavior: Clip.none, // للسماح بالتراكب
-                                children: [
-                                  Positioned(
-                                    left: 0,
-                                    child: ClipOval(
-                                      child: Image.network(
-                                        'https://i.pinimg.com/736x/1f/a3/4a/1fa34adc25b7b50f3f774c9353db35e0.jpg',
-                                        height: 50,
-                                        width: 50,
-                                        fit: BoxFit.fill,
+                        SingleChildScrollView(
+                          child: Row(
+                            children: [
+                              SizedBox(
+                                width: 80, 
+                                height: 30, 
+                                child: Stack(
+                                  clipBehavior: Clip.none, 
+                                  children: [
+                                    Positioned(
+                                      left: 0,
+                                      child: ClipOval(
+                                        child: Image.network(
+                                          'https://i.pinimg.com/736x/1f/a3/4a/1fa34adc25b7b50f3f774c9353db35e0.jpg',
+                                          height: 50,
+                                          width: 50,
+                                          fit: BoxFit.fill,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Positioned(
-                                    left: 35,
-                                    child: ClipOval(
-                                      child: Image.network(
-                                        'https://i.pinimg.com/736x/42/ed/81/42ed81e1e37b43342cba39752d93d050.jpg',
-                                        height: 52,
-                                        width: 50,
-                                        fit: BoxFit.fill,
+                                    Positioned(
+                                      left: 35,
+                                      child: ClipOval(
+                                        child: Image.network(
+                                          'https://i.pinimg.com/736x/42/ed/81/42ed81e1e37b43342cba39752d93d050.jpg',
+                                          height: 52,
+                                          width: 50,
+                                          fit: BoxFit.fill,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Positioned(
-                                    left: 70,
-                                    child: ClipOval(
-                                      child: Image.network(
-                                        'https://i.pinimg.com/736x/e9/ba/40/e9ba401b22f6355ffa19bed755ec8b73.jpg',
-                                        height: 52,
-                                        width: 50,
-                                        fit: BoxFit.fill,
+                                    Positioned(
+                                      left: 70,
+                                      child: ClipOval(
+                                        child: Image.network(
+                                          'https://i.pinimg.com/736x/e9/ba/40/e9ba401b22f6355ffa19bed755ec8b73.jpg',
+                                          height: 52,
+                                          width: 50,
+                                          fit: BoxFit.fill,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Positioned(
-                                    left: 110,
-                                    child: ClipOval(
-                                      child: Image.network(
-                                        'https://i.pinimg.com/736x/63/6e/3b/636e3b9e7b967e40fa8e0c9690f4ac8a.jpg',
-                                        height: 52,
-                                        width: 50,
-                                        fit: BoxFit.fill,
+                                    Positioned(
+                                      left: 110,
+                                      child: ClipOval(
+                                        child: Image.network(
+                                          'https://i.pinimg.com/736x/63/6e/3b/636e3b9e7b967e40fa8e0c9690f4ac8a.jpg',
+                                          height: 52,
+                                          width: 50,
+                                          fit: BoxFit.fill,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -194,7 +196,7 @@ class Screen2 extends StatelessWidget {
                         horizontal: 20, vertical: 10),
                     margin: const EdgeInsets.only(left: 10, right: 10, top: 10),
                     decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 11, 1, 86),
+                      color: const Color.fromARGB(255, 70, 1, 86),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(
